@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+body,div,header,footer,section,aside,
+h1,h2,h3,h4,h5,h6,p,nav,ul,li,ol,dl,dt,dd {margin:0;padding:0;}
+
+ul,li{
+    list-style: none;
+}
+a{text-decoration: none;color:#333;}
+img{vertical-align: top;}
+.clear::after{content:"";display: block;clear:both;}
+body{
+    background:black;
+}
+#wrap{
+    min-width: 1800px;
+    margin:0 auto;
+}
+.inner{
+    width:1800px;
+    margin:0 auto;
+}
+
+/*header top시작*/
+header{
+    box-sizing: border-box;
+    position: fixed;/*상단메뉴 고정시키려면 nav가 header안에 있어야함*/
+    width:100%;
+    z-index:99;
+    background:black;
+}
+header .header_top{
+    border-bottom:1px solid #ccc;
+    width:100%;
+    height:40px;
+}
+header .header_top .topleft{
+    float:left;
+    margin-left:20px;
+}
+header .header_top .topleft ul li{
+    display:inline-block;
+    padding:0 13px;
+    line-height: 40px;
+}
+header .header_top .topleft li a{
+    color:#fff;
+    font-size: 14px;
+}
+.converse{
+    margin-top:16px;
+    width:60px;    
+}
+.jordan{
+    width:25px;
+    margin-top:6px;
+}
+header .header_top .topright{
+    float:right;
+    margin-right:20px;
+
+}
+header .header_top .topright ul li{
+    display:inline-block;
+    padding:0 13px;
+    line-height: 40px;
+
+}
+header .header_top .topright li a{
+    color:#fff;
+    font-size: 14px;
+
+}
+header .header_top .topright li img{
+    color:#fff;
+    margin-top:3px;
+    margin-right:-6px;
+    width:20px;
+    }
+/*header top끝*/
+
+/*nav시작*/
+nav{
+    width:100%;
+    margin:10px auto 0;
+    height:70px;
+    border-bottom:1px solid #ccc;
+}
+nav .gnb{
+    text-align: center;
+}
+nav .gnb li{
+    display:inline-block;
+    padding:0 35px;
+    line-height: 60px;
+}
+nav .gnb li a{
+    color:#fff;
+    font-size: 16px;
+}
+nav .gnb li .logo{
+    width:110px;
+    margin-top:5px;
+}
+/*nav 끝*/
+/*video 시작*/
+#bg{
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    right:0;
+    top:122px;
+    bottom:0;
+    width:1800px;
+    border:0;
+}
+#video{
+    height: 1230px;
+}
+#bg:focus{
+    outline: 0;/*video눌렀을때 겉에 라인생기는거 없애기*/
+}
+/*vidio끝*/
+/*큰 텍스트시작*/
+.textbox{
+    width:1800px;
+    margin:0 auto;
+    text-align: center;
+}
+.textbox h1{
+    color:#fff;
+    font-size: 50px;
+    line-height: 1;
+    padding:20px 0;
+}
+.textbox h5{
+    color:#fff;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.textbox .go_btn{
+    border:1px solid #000;
+    width:100px;
+    height:40px;
+    border-radius: 20px;
+    background:#fff;
+    
+}
+.textbox a .go_btn{
+    color:#000;
+    font-weight: bold;
+    font-size: 14px;
+    transition:all 0.5s;
+}
+.textbox .go_btn:hover{
+    background:#ff7d25;
+    cursor: pointer;
+}
+.textbox .go_btn a:hover{
+    color:#fff;
+}
+/*큰 텍스트끝*/
+.slider{
+    width:1800px;
+    margin:80px auto 0px;
+}
+.slider h2{
+    text-align: left;
+    color:#fff;
+    padding:10px 0 20px 10px;
+}
+.slider .simg{}
+.slider .simg li{
+    display:inline-block;
+    width:24%;
+    position: relative;
+}
+.slider .simg li p{
+    position: absolute;
+    bottom:20px;
+    color:#fff;
+}
+.slider .simg li a{
+    position: absolute;
+
+}
+.slider .simg li img{
+    width:420px;
+    height:460px;
+}
+
+
+footer{
+    height:1000px;
+}
